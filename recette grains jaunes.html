@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Recette Des Grains Jaunes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Sigmar+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('https://t3.ftcdn.net/jpg/03/18/85/50/360_F_318855002_ub9t7PEZpTOTrh4Xqgnz1YYqoHN6G550.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            font-family: 'Imperial Script', sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        h2, h3 {
+            font-size: 2.5rem;
+            color: #fff;
+            font-family: 'Sigmar One', sans-serif;
+            margin-top: 40px;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            color: #fff;
+            font-family: 'Agbalumo', sans-serif;
+            line-height: 1.6;
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .img {
+            margin-top: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 4px solid #80ff80;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Flèches gauche et droite */
+        .arrow-link {
+            position: absolute;
+            top: 20px;
+        }
+
+        .arrow-link img {
+            width: 50px;
+            height: auto;
+            transition: transform 0.3s ease;
+            margin-left: 20px;
+            width: 70px;
+        }
+
+        .arrow-link-left {
+            left: 20px;
+            transform: rotate(180deg);
+            background-color: rgba(255, 0, 0, 0.2);
+            border-radius: 50px;
+        }
+
+        .arrow-link-right {
+            right: 20px;
+            background-color: rgba(255, 0, 0, 0.2);
+            border-radius: 50px;
+        }
+
+        .arrow-link img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Pour les écrans moyens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2, h3 {
+                font-size: 2rem;
+            }
+            p, ul {
+                font-size: 1rem;
+            }
+            .arrow-link img {
+                width: 40px;
+            }
+        }
+
+        footer {
+            font-family: 'Sigmar One', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flèche pointant à gauche -->
+    <a href="recette cari poisson.html" class="arrow-link arrow-link-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="Flèche vers la recette grains jaunes">
+    </a>
+    
+    <!-- Flèche pointant à droite -->
+    <a href="recette chouchou.html" class="arrow-link arrow-link-right">
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="Flèche vers la recette chouchou">
+    </a>
+
+    <div class="container">
+        <h1>La Recette Des Grains Jaunes</h1>
+        <p>Les grains jaunes, un plat savoureux typique de la cuisine réunionnaise, sont simples à préparer et offrent un goût délicieux...</p>
+
+        <h2>Ingrédients :</h2>
+        <ul>
+            <li>1 mesure de haricots cocos blancs</li>
+            <li>1 demi oignon</li>
+            <li>1 gousse d'ail pelée</li>
+            <li>1 branche de thym</li>
+            <li>1 demi cuil. à café de curcuma</li>
+            <li>sel & poivre</li>
+            <li>huile de tournesol</li>
+        </ul>
+
+        <img src="https://lh5.googleusercontent.com/proxy/ns3rEJCkgGeZX1783z_NoDxGBK3asl0mR2qNPdEjFxgc7ApXibqYL0G0wrbQn9iQyVHoogQDCWvvLzsgkE8KBW7zi9Pw-dRVmKfrQkMzy3iBtuCOzTQyc-I4TJi0-QI" alt="Grains jaunes" class="img">
+
+        <h3>Préparation :</h3>
+        <p>
+            1. Dans une cocotte-minute, mettre les haricots avec une cuillère à café d'huile de tournesol.<br>
+            2. Fermer la cocotte et mettre la soupape de sécurité.<br>
+            3. Faire cuire à feu vif, jusqu'au sifflement de la soupape, puis baisser le feu et laisser cuire pendant 50 minutes à feu doux.<br>
+            4. Ôter la cocotte du feu et faire évacuer l'air en soulevant la soupape, puis l'ouvrir, remettre sur le feu vif, mais sans couvercle.<br>
+            5. Dans une casserole, roussir l'oignon, l'ail, ajouter le curcuma, le sel et le poivre.<br>
+            6. Déglacer votre mélange avec un peu du bouillon des grains et verser le mélange dans la cocotte.<br>
+            7. Faire réduire à feu vif, ajouter le thym, jusqu'à apparition d'une écume assez importante sur le dessus.<br>
+        </p>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <a href="cuisine reunionnaise .html">La Réunion</a> / 
+        <a href="plats.html">Plats</a> / 
+        <a href="dessert.html">Desserts</a>
+    </footer>
+
+</body>
+</html>

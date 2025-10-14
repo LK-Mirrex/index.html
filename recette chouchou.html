@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Recette Du Gratin De Chouchou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Sigmar+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('https://t3.ftcdn.net/jpg/03/18/85/50/360_F_318855002_ub9t7PEZpTOTrh4Xqgnz1YYqoHN6G550.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: center 10%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            font-family: 'Imperial Script', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        h2, h3 {
+            font-size: 2.5rem;
+            color: #fff;
+            font-family: 'Sigmar One', sans-serif;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #fff;
+            font-family: 'Agbalumo', sans-serif;
+            line-height: 1.6;
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        ul {
+            font-size: 1.1rem;
+            color: #fff;
+            font-family: 'Agbalumo', sans-serif;
+            text-align: left;
+            margin: 20px auto;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .img {
+            margin-top: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 4px solid #8ecace;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Pour les écrans moyens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2, h3 {
+                font-size: 2rem;
+            }
+            p, ul {
+                font-size: 1rem;
+            }
+        }
+
+        /* Pour les petits écrans */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2, h3 {
+                font-size: 1.8rem;
+            }
+            p, ul {
+                font-size: 0.9rem;
+            }
+        }
+
+        footer {
+            font-family: 'Sigmar One', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ffcc00; /* Couleur dorée au survol */
+        }
+
+        /* Styles pour les flèches */
+        .arrow-link {
+            position: absolute;
+            top: 20px;
+        }
+
+        .arrow-link img {
+            width: 50px;
+            height: auto;
+            transition: transform 0.3s ease;
+            margin-left: 20px; /* Espace entre les flèches */
+            width: 70px;
+        }
+
+        .arrow-link-left {
+            left: 20px;
+            transform: rotate(180deg);
+            background-color: rgba(255, 0, 0, 0.2);
+            border-radius: 50px;
+        }
+
+        .arrow-link-right {
+            right: 20px;
+            background-color: rgba(255, 0, 0, 0.2);
+            border-radius: 50px;
+        }
+
+        .arrow-link img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+   <!-- Flèche pointant à gauche -->
+   <a href="recette grains jaunes.html" class="arrow-link arrow-link-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="Flèche vers la recette chouchou">
+    </a>
+   
+   <!-- Flèche pointant à droite -->
+   <a href="recette cabri massalé.html" class="arrow-link arrow-link-right">
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="Flèche vers la recette rougail saucisses">
+    </a>
+    
+    <div class="container">
+        <h1>La Recette Du Gratin De Chouchou</h1>
+        <p>Le gratin de chouchou est un plat délicieux et simple à préparer. Ce gratin créole est un accompagnement parfait pour vos repas en famille ou entre amis. Découvrez comment le réaliser facilement avec les ingrédients de base que vous avez sous la main.</p>
+
+        <h2>Ingrédients :</h2>
+        <ul>
+            <li>3 ou 4 chouchous</li>
+            <li>2 gousses d'ail</li>
+            <li>1 cuillère à soupe de farine (bien remplie)</li>
+            <li>40g de beurre</li>
+            <li>50cl de lait</li>
+            <li>10cl de crème liquide (facultatif)</li>
+            <li>sel</li>
+            <li>poivre</li>
+            <li>noix de muscade moulue</li>
+            <li>gruyère râpé</li>
+        </ul>
+
+        <img src="https://image.over-blog.com/bxZUBVF7BW1Wb4UP-OqW7ZvlxfM=/filters:no_upscale()/image%2F4601111%2F20210517%2Fob_929475_gratin-de-chouchous-reunionnais.JPG" alt="Gratin de chouchou" class="img">
+
+        <h3>Préparation :</h3>
+        <p>
+            1. Faire cuire les chouchous à l'eau ou à la vapeur. Les éplucher et les couper en petits cubes.<br>
+            2. Pour la béchamel : dans une casserole, faire fondre le beurre et y ajouter l'ail haché. Ajouter la farine petit à petit tout en remuant constamment.<br>
+            3. Lorsque le mélange commence à s'épaissir, ajouter le lait petit à petit sans arrêter de remuer jusqu'à obtenir une sauce homogène.<br>
+            4. Ajouter la crème et/ou du fromage râpé à la béchamel (facultatif). Assaisonner avec du sel, du poivre et une pincée de noix de muscade.<br>
+            5. Préchauffer le four à 200°C (thermostat 6-7).<br>
+            6. Mélanger les chouchous avec la béchamel dans un plat à gratin. Recouvrir de gruyère râpé.<br>
+            7. Cuire au four pendant environ 30 minutes, jusqu'à ce que le fromage soit bien gratiné.<br>
+        </p>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <a href="cuisine reunionnaise .html">La Réunion</a> / 
+        <a href="plats.html">Plats</a> / 
+        <a href="dessert.html">Desserts</a>
+    </footer>
+</body>
+</html>

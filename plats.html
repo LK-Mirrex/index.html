@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Plats</title>
+    <style>
+        body {
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-image: url('https://t3.ftcdn.net/jpg/03/18/85/50/360_F_318855002_ub9t7PEZpTOTrh4Xqgnz1YYqoHN6G550.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: center 10%;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .title {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px; /* Réduit l'écart entre le texte et l'image */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .title:hover {
+            color: #FF6347; /* Rouge Tomate */
+            transform: scale(1.05); /* Léger agrandissement au survol */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 4 colonnes pour afficher plus d'images */
+            row-gap: 30px; /* Espacement vertical entre les lignes */
+            column-gap: 20px; /* Espacement horizontal entre les colonnes */
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            border: 3px solid white; /* Bordure blanche autour des images */
+            border-radius: 8px; /* Coins arrondis */
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Ombre autour des images */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 220px; /* Réduit la largeur des vignettes */
+            height: 200px; /* Réduit la hauteur des vignettes */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Les éléments commencent à partir du haut */
+            align-items: center;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05); /* Effet de zoom */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Ombre plus marquée au survol */
+        }
+
+        img {
+            width: 100%; /* Les images remplissent toute la largeur de la vignette */
+            height: 150px; /* Hauteur des images réduite */
+            object-fit: cover; /* Assure que l'image couvre le conteneur sans déformation */
+            transition: transform 0.3s ease;
+        }
+
+        .image-container a {
+            display: block;
+            text-align: center;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Place la vidéo en arrière-plan */
+        }
+
+        /* Effet de clic : animation d'expansion */
+        .image-container:active {
+            transform: scale(0.98); /* Réduit légèrement au clic */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted playsinline>
+    <source src="ILE DE LA REUNION - DRONE 4K 2021 (Mavic mini 2).mp4" type="video/mp4">
+    <img src="fallback-image.jpg" alt="Image de fond">
+    </video>
+    <h1>Plats de La Réunion</h1>
+
+    <div class="container">
+        <div class="image-container">
+            <a href="recette cari poisson.html">
+                <img src="https://img-3.journaldesfemmes.fr/OEz5WQR-1xi55Zf4c7LGfb4QLQA=/750x500/af6768f0e45d4a73858eedcbc8062491/ccmcms-jdf/39687233.jpg" alt="Cari de poisson">
+            </a>
+            <a href="recette cari poisson.html" class="title">Cari de poisson</a>
+        </div>
+
+        <div class="image-container">
+            <a href="recette grains jaunes.html">
+                <img src="https://lh5.googleusercontent.com/proxy/ns3rEJCkgGeZX1783z_NoDxGBK3asl0mR2qNPdEjFxgc7ApXibqYL0G0wrbQn9iQyVHoogQDCWvvLzsgkE8KBW7zi9Pw-dRVmKfrQkMzy3iBtuCOzTQyc-I4TJi0-QI" alt="Grains jaunes">
+            </a>
+            <a href="recette grains jaunes.html" class="title">Grains jaunes</a>
+        </div>
+
+        <div class="image-container">
+            <a href="recette chouchou.html">
+                <img src="https://image.over-blog.com/bxZUBVF7BW1Wb4UP-OqW7ZvlxfM=/filters:no_upscale()/image%2F4601111%2F20210517%2Fob_929475_gratin-de-chouchous-reunionnais.JPG" alt="Chouchou">
+            </a>
+            <a href="recette chouchou.html" class="title">Gratin De Chouchou</a>
+        </div>
+
+        <div class="image-container">
+            <a href="recette cabri massalé.html">
+                <img src="https://i.pinimg.com/originals/b8/8e/85/b88e85e4bdbaf93aa3a3dbcd3ae475b2.jpg" alt="Cabri Massalé">
+            </a>
+            <a href="recette cabri massalé.html" class="title">Cabri Massalé</a>
+        </div>
+
+        <div class="image-container">
+            <a href="recette rougail saucisses.html">
+                <img src="https://kabiloutte.fr/wp-content/uploads/2017/03/rougail.jpg" alt="Rougail saucisses">
+            </a>
+            <a href="recette rougail saucisses.html" class="title">Rougail saucisses</a>
+        </div>
+
+        <div class="image-container">
+            <a href="recette du cari poulet.html">
+                <img src="https://i.ytimg.com/vi/Ud0BGk2alkM/maxresdefault.jpg" alt="Cari Poulet">
+            </a>
+            <a href="recette du cari poulet.html" class="title">Cari Poulet</a>
+        </div>
+    </div>
+</body>
+</html>
